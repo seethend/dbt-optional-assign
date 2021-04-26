@@ -22,14 +22,14 @@ int bPlusTreeSize;
 
 /**
  *
- * @brief Implementation of FIFO page replacement strategy by replacing the page that has been in memory the longest
+ * @brief To swap B+ tree nodes
  *
  * @author Anand Babu Badrichetty
  *
- * @param bm
- * @param page
+ * @param i
+ * @param j
  *
- * @return void
+ * @return RC
  */
 RC swapNodes(int i, int j) {
 
@@ -40,7 +40,16 @@ RC swapNodes(int i, int j) {
     bPlusTreeRecords[j] = tempRecMem;
 }
 
-
+/**
+ *
+ * @brief Convert string to Value Struct
+ *
+ * @author Anand Babu Badrichetty
+ *
+ * @param val
+ *
+ * @return Value
+ */
 Value *stringToValue(char *val)
 {
     Value *valRes = (Value *) malloc(sizeof(Value));
@@ -51,42 +60,55 @@ Value *stringToValue(char *val)
     return valRes;
 }
 
-/************************************************************
- *            INIT AND SHUTDOWN INDEX MANAGER               *
- ************************************************************/
-
-/*******************************************************************
-* DESCRIPTION :     Initializes the index manager by setting a pointer to the memory that contains the B+-Tree
-*					with a size of 50.
-*******************************************************************/
-RC initIndexManager (void *mgmtData) {
+/**
+ *
+ * @brief Initializes the Index Manager memory that contains the B+-Tree with a size of B_TREE_NODE_SIZE.
+ *
+ * @author Anand Babu Badrichetty
+ *
+ * @param data
+ *
+ * @return RC
+*/
+RC initIndexManager (void *data) {
     // Create a pointer to the memory that will contain up to 50 nodes
     bPlusTreeRecords = (record **) malloc (sizeof(record *) * B_TREE_NODE_SIZE);
     return RC_OK;
 }
 
-/*******************************************************************
-* DESCRIPTION :     Terminates the index manager.
-*******************************************************************/
+/**
+ *
+ * @brief Closes the Index manager
+ *
+ * @author Anand Babu Badrichetty
+ *
+ * @return RC
+*/
 RC shutdownIndexManager () {
     free(bPlusTreeRecords);
     return RC_OK;
 }
 
-
-/************************************************************
- *     CREATE, DESTROY, OPEN, AND CLOSE A BTREE INDEX       *
- ************************************************************/
-
-/*******************************************************************
-* DESCRIPTION :     Creates a B Tree with the given arguments
-*******************************************************************/
+/**
+ *
+ * @brief Creates a B+ Tree with the provided KeyType and size
+ *
+ * @author Chandu Bhargav Kasukurthi
+ *
+ * @param idxId
+ * @param keyType
+ * @param n
+ *
+ * @return RC
+*/
 RC createBtree (char *idxId, DataType keyType, int n) {
 
     BTreeHandle *handle;
     handle = (BTreeHandle *) malloc (sizeof(BTreeHandle) * n);
+
     handle->keyType = keyType;
     handle->idxId = idxId;
+
     totalNodeCount = 0;
     scanNextNode = 0;
 
@@ -95,9 +117,17 @@ RC createBtree (char *idxId, DataType keyType, int n) {
     return RC_OK;
 }
 
-/*******************************************************************
-* DESCRIPTION :     Opens a B Tree identified by its id
-*******************************************************************/
+/**
+ * @brief Opens the B+ Tree by its id
+ *
+ * @author Chandu Bhargav Kasukurthi
+ *
+ * @param idxId
+ * @param keyType
+ * @param n
+ *
+ * @return RC
+*/
 RC openBtree (BTreeHandle **tree, char *idxId) {
     *tree = (BTreeHandle *) malloc (sizeof(BTreeHandle) * bPlusTreeSize);
     (*tree)->idxId = (char *) malloc (sizeof(char) * (strlen(idxId) + 1));
@@ -107,17 +137,29 @@ RC openBtree (BTreeHandle **tree, char *idxId) {
     return RC_OK;
 }
 
-/*******************************************************************
-* DESCRIPTION :     Closes a B Tree passed as a parameter
-*******************************************************************/
+/**
+ * @brief Closes the B+ Tree
+ *
+ * @author Chandu Bhargav Kasukurthi
+ *
+ * @param tree
+ *
+ * @return RC
+*/
 RC closeBtree (BTreeHandle *tree) {
     free(tree);
     return RC_OK;
 }
 
-/*******************************************************************
-* DESCRIPTION :     Deletes a B Tree identified by its id
-*******************************************************************/
+/**
+ * @brief Deletes the B+ Tree by its id
+ *
+ * @author Chandu Bhargav Kasukurthi
+ *
+ * @param idxId
+ *
+ * @return RC
+*/
 RC deleteBtree (char *idxId) {
 
     // remove the file
@@ -126,30 +168,20 @@ RC deleteBtree (char *idxId) {
     // Resetting the values to 0
     totalNodeCount = 0;
     scanNextNode = 0;
+
     return RC_OK;
 }
 
-/*******************************************************************
-* DESCRIPTION :     Gets the total number of nodes in the B Tree
-*******************************************************************/
-RC getNumNodes (BTreeHandle *tree, int *result) {
-/*
-    // Initialize variable to iterate the tree
-    int counter = 0;
-    int i;
-    int j;
-
-    for (i = 0; i < totalNodeCount; i++) {
-        for (j = i - 1; j >= 0; j--) {
-            // If both pages are the same
-            if (bPlusTreeRecords[j]->rid.page == bPlusTreeRecords[i]->rid.page) {
-                // Increase the counter and break the inner loop
-                counter++;
-                break;
-            }
-        }
-    }
+/**
+ * @brief  Returns the total number of nodes in the B+ Tree
+ *
+ * @author Seethend Reddy Dummansoor
+ *
+ * @param idxId
+ *
+ * @return RC
 */
+RC getNumNodes (BTreeHandle *tree, int *result) {
     // Return result = total number of nodes - repeated nodes
     *result = totalNodeCount - 2;
 
@@ -184,7 +216,7 @@ RC getNumEntries (BTreeHandle *tree, int *result) {
  * @return RC
  */
 RC getKeyType (BTreeHandle *tree, DataType *result) {
-//    *result = tree->keyType;
+    *result = tree->keyType;
     return RC_OK;
 }
 
