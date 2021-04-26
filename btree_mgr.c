@@ -40,17 +40,7 @@ RC swapNodes(int i, int j) {
     bPlusTreeRecords[j] = tempRecMem;
 }
 
-/**
- *
- * @brief Implementation of FIFO page replacement strategy by replacing the page that has been in memory the longest
- *
- * @author Anand Babu Badrichetty
- *
- * @param bm
- * @param page
- *
- * @return void
- */
+
 Value *stringToValue(char *val)
 {
     Value *valRes = (Value *) malloc(sizeof(Value));
@@ -95,10 +85,8 @@ RC createBtree (char *idxId, DataType keyType, int n) {
 
     BTreeHandle *handle;
     handle = (BTreeHandle *) malloc (sizeof(BTreeHandle) * n);
-
     handle->keyType = keyType;
     handle->idxId = idxId;
-
     totalNodeCount = 0;
     scanNextNode = 0;
 
@@ -138,7 +126,6 @@ RC deleteBtree (char *idxId) {
     // Resetting the values to 0
     totalNodeCount = 0;
     scanNextNode = 0;
-
     return RC_OK;
 }
 
@@ -169,29 +156,50 @@ RC getNumNodes (BTreeHandle *tree, int *result) {
     return RC_OK;
 }
 
-/*******************************************************************
-* DESCRIPTION :     Get the number of nodes
-*******************************************************************/
+/**
+ *
+ * @brief Implementation for finding the number of entries in the BPlusTree
+ *
+ * @author Seethend Reddy Dummansoor
+ *
+ * @param tree
+ * @param result
+ *
+ * @return RC
+ */
 RC getNumEntries (BTreeHandle *tree, int *result) {
     *result = totalNodeCount;
     return RC_OK;
 }
 
-/*******************************************************************
-* DESCRIPTION :     Get data type of tree
-*******************************************************************/
+/**
+ *
+ * @brief Implementation for finding the type of given key in the BPlusTree
+ *
+ * @author Seethend Reddy Dummansoor
+ *
+ * @param tree
+ * @param result
+ *
+ * @return RC
+ */
 RC getKeyType (BTreeHandle *tree, DataType *result) {
 //    *result = tree->keyType;
     return RC_OK;
 }
 
-/************************************************************
- *                    INDEX ACCESS                          *
- ************************************************************/
-
-/*******************************************************************
-* DESCRIPTION :     Look for a given key in tree
-*******************************************************************/
+/**
+ *
+ * @brief Implementation for finding a given key in the BPlusTree
+ *
+ * @author Seethend Reddy Dummansoor
+ *
+ * @param tree
+ * @param key
+ * @param result
+ *
+ * @return RC
+ */
 RC findKey (BTreeHandle *tree, Value *key, RID *result) {
     int i = 0;
 
@@ -208,9 +216,18 @@ RC findKey (BTreeHandle *tree, Value *key, RID *result) {
     return RC_IM_KEY_NOT_FOUND;
 }
 
-/*******************************************************************
-* DESCRIPTION :     Insert new node to tree
-*******************************************************************/
+/**
+ *
+ * @brief Implementation for inserting a given key in the BPlusTree
+ *
+ * @author Seethend Reddy Dummansoor
+ *
+ * @param tree
+ * @param key
+ * @param rid
+ *
+ * @return RC
+ */
 RC insertKey (BTreeHandle *tree, Value *key, RID rid) {
 
     int i = 0;
@@ -237,9 +254,17 @@ RC insertKey (BTreeHandle *tree, Value *key, RID rid) {
     }
 }
 
-/*******************************************************************
-* DESCRIPTION :     Delete key from tree
-*******************************************************************/
+/**
+ *
+ * @brief Implementation for deleting a specified  key in the BPlusTree
+ *
+ * @author Ganugapanta Vishnuvardhan Reddy
+ *
+ * @param tree
+ * @param key
+ *
+ * @return RC
+ */
 RC deleteKey (BTreeHandle *tree, Value *key) {
 
     int i = 0;
@@ -267,9 +292,17 @@ RC deleteKey (BTreeHandle *tree, Value *key) {
     return RC_IM_KEY_NOT_FOUND;
 }
 
-/*******************************************************************
-* DESCRIPTION :     Sort key in tree
-*******************************************************************/
+/**
+ *
+ * @brief Implementation for sorting the keys in ascending order
+ *
+ * @author Ganugapanta Vishnuvardhan Reddy
+ *
+ * @param tree
+ * @param handle
+ *
+ * @return RC
+ */
 RC openTreeScan (BTreeHandle *tree, BT_ScanHandle **handle) {
 
     int i;
@@ -286,9 +319,17 @@ RC openTreeScan (BTreeHandle *tree, BT_ScanHandle **handle) {
     return RC_OK;
 }
 
-/*******************************************************************
-* DESCRIPTION :     Calculates the next entry in the given scan
-*******************************************************************/
+/**
+ *
+ * @brief Implementation for scanning the nextEnrty in BPlusTree
+ *
+ * @author Ganugapanta Vishnuvardhan Reddy
+ *
+ * @param handle
+ * @param result
+ *
+ * @return RC
+ */
 RC nextEntry (BT_ScanHandle *handle, RID *result) {
 
     if (scanNextNode < totalNodeCount) {
@@ -304,18 +345,31 @@ RC nextEntry (BT_ScanHandle *handle, RID *result) {
     return RC_IM_NO_MORE_ENTRIES;
 }
 
-
-/*******************************************************************
-* DESCRIPTION :     free allocated memory from handle
-*******************************************************************/
+/**
+ *
+ * @brief Implementation of closing the handle after traversing through the nodes
+ *
+ * @author Ganugapanta Vishnuvardhan Reddy
+ *
+ * @param handle
+ *
+ * @return RC
+ */
 RC closeTreeScan (BT_ScanHandle *handle) {
     free(handle);
     return RC_OK;
 }
 
-/*******************************************************************
-* DESCRIPTION :     Debug method
-*******************************************************************/
+/**
+ *
+ * @brief Implementation for a string representation of a B+ tree in the following representation node(pos)[pointer,key,pointer, ...]
+ *
+ * @author Ganugapanta Vishnuvardhan Reddy
+ *
+ * @param tree
+ *
+ * @return char
+ */
 char *printTree (BTreeHandle *tree) {
     return tree->idxId;
 }
