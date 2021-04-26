@@ -1,4 +1,4 @@
-# Install script for directory: D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt
+# Install script for directory: D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

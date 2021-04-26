@@ -3,7 +3,6 @@
 
 CMakeFiles/pa_assign_opt.dir/btree_mgr.c.obj: ../btree_mgr.c
 CMakeFiles/pa_assign_opt.dir/btree_mgr.c.obj: ../btree_mgr.h
-CMakeFiles/pa_assign_opt.dir/btree_mgr.c.obj: ../buffer_mgr.h
 CMakeFiles/pa_assign_opt.dir/btree_mgr.c.obj: ../dberror.h
 CMakeFiles/pa_assign_opt.dir/btree_mgr.c.obj: ../dt.h
 CMakeFiles/pa_assign_opt.dir/btree_mgr.c.obj: ../storage_mgr.h

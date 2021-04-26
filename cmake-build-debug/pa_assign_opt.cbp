@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug"/>
+				<Option working_dir="D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug"/>
+				<Option working_dir="D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="pa_assign_opt">
-				<Option output="D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug/pa_assign_opt.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug"/>
+				<Option output="D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug/pa_assign_opt.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -39,15 +39,15 @@
 					<Add directory="e:\softwares\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug/Makefile&quot;  VERBOSE=1 pa_assign_opt"/>
-					<CompileFile command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug/Makefile&quot;  VERBOSE=1 pa_assign_opt"/>
+					<CompileFile command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="pa_assign_opt/fast">
-				<Option output="D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug/pa_assign_opt.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug"/>
+				<Option output="D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug/pa_assign_opt.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -57,63 +57,63 @@
 					<Add directory="e:\softwares\mingw\bin\../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug/Makefile&quot;  VERBOSE=1 pa_assign_opt/fast"/>
-					<CompileFile command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug/Makefile&quot;  VERBOSE=1 pa_assign_opt/fast"/>
+					<CompileFile command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug"/>
+				<Option working_dir="D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/softwares/MinGW/bin/mingw32-make.exe -f &quot;D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/btree_mgr.c">
+		<Unit filename="D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/btree_mgr.c">
 			<Option target="pa_assign_opt"/>
 		</Unit>
-		<Unit filename="D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/btree_mgr.h">
+		<Unit filename="D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/btree_mgr.h">
 			<Option target="pa_assign_opt"/>
 		</Unit>
-		<Unit filename="D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/buffer_mgr.c">
+		<Unit filename="D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/buffer_mgr.c">
 			<Option target="pa_assign_opt"/>
 		</Unit>
-		<Unit filename="D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/buffer_mgr.h">
+		<Unit filename="D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/buffer_mgr.h">
 			<Option target="pa_assign_opt"/>
 		</Unit>
-		<Unit filename="D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/buffer_mgr_stat.c">
+		<Unit filename="D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/buffer_mgr_stat.c">
 			<Option target="pa_assign_opt"/>
 		</Unit>
-		<Unit filename="D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/buffer_mgr_stat.h">
+		<Unit filename="D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/buffer_mgr_stat.h">
 			<Option target="pa_assign_opt"/>
 		</Unit>
-		<Unit filename="D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/dberror.c">
+		<Unit filename="D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/dberror.c">
 			<Option target="pa_assign_opt"/>
 		</Unit>
-		<Unit filename="D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/dberror.h">
+		<Unit filename="D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/dberror.h">
 			<Option target="pa_assign_opt"/>
 		</Unit>
-		<Unit filename="D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/expr.c">
+		<Unit filename="D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/expr.c">
 			<Option target="pa_assign_opt"/>
 		</Unit>
-		<Unit filename="D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/expr.h">
+		<Unit filename="D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/expr.h">
 			<Option target="pa_assign_opt"/>
 		</Unit>
-		<Unit filename="D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/storage_mgr.c">
+		<Unit filename="D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/storage_mgr.c">
 			<Option target="pa_assign_opt"/>
 		</Unit>
-		<Unit filename="D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/storage_mgr.h">
+		<Unit filename="D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/storage_mgr.h">
 			<Option target="pa_assign_opt"/>
 		</Unit>
-		<Unit filename="D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/test_assign4_1.c">
+		<Unit filename="D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/test_assign4_1.c">
 			<Option target="pa_assign_opt"/>
 		</Unit>
-		<Unit filename="D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/CMakeLists.txt">
+		<Unit filename="D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

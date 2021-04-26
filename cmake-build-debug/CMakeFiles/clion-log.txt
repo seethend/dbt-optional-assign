@@ -1,4 +1,11 @@
-"C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "D:\UC\First Sem\DBT - 6051\workspace\pa-assign-opt"
+"C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "D:\UC\First Sem\DBT - 6051\workspace\git-pa-optional\dbt-optional-assign"
+-- The C compiler identification is GNU 9.2.0
+-- Check for working C compiler: E:/softwares/MinGW/bin/gcc.exe
+-- Check for working C compiler: E:/softwares/MinGW/bin/gcc.exe - works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug
+-- Build files have been written to: D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug

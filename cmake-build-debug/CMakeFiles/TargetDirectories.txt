@@ -1,3 +1,3 @@
-D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug/CMakeFiles/pa_assign_opt.dir
-D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug/CMakeFiles/pa_assign_opt.dir
+D:/UC/First Sem/DBT - 6051/workspace/git-pa-optional/dbt-optional-assign/cmake-build-debug/CMakeFiles/rebuild_cache.dir

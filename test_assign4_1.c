@@ -82,7 +82,7 @@ testInsertAndFind (void)
 
   // search for keys
   // 1000
-  for(i = 0; i < 100; i++)
+  for(i = 0; i < 1000; i++)
     {
       int pos = rand() % numInserts;
       RID rid;
@@ -160,7 +160,7 @@ testDelete (void)
 
       // search for keys
       // 1000
-      for(i = 0; i < 100; i++)
+      for(i = 0; i < 1000; i++)
 	{
 	  int pos = rand() % numInserts;
 	  RID rid;
