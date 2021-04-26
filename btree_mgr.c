@@ -20,25 +20,17 @@ int scanNextNode;
 
 int bPlusTreeSize;
 
-/*******************************************************************
-* DESCRIPTION :     Search for the index of given key in tree
-*******************************************************************/
-int searchKey (BTreeHandle *tree, Value *key) {
-    int i = 0;
-
-    while (i < totalNodeCount) {
-        if (bPlusTreeRecords[i]->val.dt == key->dt
-            && ((bPlusTreeRecords[i]->val.dt == DT_INT && bPlusTreeRecords[i]->val.v.intV == key->v.intV))) {
-            return i;
-        }
-        i++;
-    }
-
-    return -1;
-}
-
-
-
+/**
+ *
+ * @brief Implementation of FIFO page replacement strategy by replacing the page that has been in memory the longest
+ *
+ * @author Anand Babu Badrichetty
+ *
+ * @param bm
+ * @param page
+ *
+ * @return void
+ */
 RC swapNodes(int i, int j) {
 
     record *tempRecMem = (record *) malloc (sizeof(record));
@@ -46,6 +38,27 @@ RC swapNodes(int i, int j) {
     tempRecMem = bPlusTreeRecords[i];
     bPlusTreeRecords[i] = bPlusTreeRecords[j];
     bPlusTreeRecords[j] = tempRecMem;
+}
+
+/**
+ *
+ * @brief Implementation of FIFO page replacement strategy by replacing the page that has been in memory the longest
+ *
+ * @author Anand Babu Badrichetty
+ *
+ * @param bm
+ * @param page
+ *
+ * @return void
+ */
+Value *stringToValue(char *val)
+{
+    Value *valRes = (Value *) malloc(sizeof(Value));
+
+    valRes->dt = DT_INT;
+    valRes->v.intV = atoi(val + 1);
+
+    return valRes;
 }
 
 /************************************************************
@@ -305,14 +318,4 @@ RC closeTreeScan (BT_ScanHandle *handle) {
 *******************************************************************/
 char *printTree (BTreeHandle *tree) {
     return tree->idxId;
-}
-
-Value *stringToValue(char *val)
-{
-    Value *valRes = (Value *) malloc(sizeof(Value));
-
-    valRes->dt = DT_INT;
-    valRes->v.intV = atoi(val + 1);
-
-    return valRes;
 }
