@@ -1,0 +1,48 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/btree_mgr.c
+string.h
+-
+stdlib.h
+-
+btree_mgr.h
+D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/btree_mgr.h
+buffer_mgr.h
+D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/buffer_mgr.h
+storage_mgr.h
+D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/storage_mgr.h
+tables.h
+D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/tables.h
+
+D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/btree_mgr.h
+dberror.h
+D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/dberror.h
+tables.h
+D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/tables.h
+
+D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/buffer_mgr.h
+dberror.h
+D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/dberror.h
+dt.h
+D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/dt.h
+
+D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/dberror.h
+stdio.h
+D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/stdio.h
+
+D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/dt.h
+
+D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/storage_mgr.h
+dberror.h
+D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/dberror.h
+
+D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/tables.h
+dt.h
+D:/UC/First Sem/DBT - 6051/workspace/pa-assign-opt/dt.h
+

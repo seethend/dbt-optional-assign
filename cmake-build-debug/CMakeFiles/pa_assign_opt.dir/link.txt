@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\pa_assign_opt.dir/objects.a
+E:\softwares\MinGW\bin\ar.exe cr CMakeFiles\pa_assign_opt.dir/objects.a @CMakeFiles\pa_assign_opt.dir\objects1.rsp
+E:\softwares\MinGW\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\pa_assign_opt.dir/objects.a -Wl,--no-whole-archive  -o pa_assign_opt.exe -Wl,--out-implib,libpa_assign_opt.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\pa_assign_opt.dir\linklibs.rsp
