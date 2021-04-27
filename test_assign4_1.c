@@ -81,7 +81,6 @@ testInsertAndFind (void)
   ASSERT_EQUALS_INT(testint, numInserts, "number of entries in btree");
 
   // search for keys
-  // 1000
   for(i = 0; i < 1000; i++)
     {
       int pos = rand() % numInserts;
@@ -159,7 +158,6 @@ testDelete (void)
 	}
 
       // search for keys
-      // 1000
       for(i = 0; i < 1000; i++)
 	{
 	  int pos = rand() % numInserts;

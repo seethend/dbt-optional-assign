@@ -260,3 +260,38 @@ attrOffsets (Schema *schema, int attrNum, int *result)
   *result = offset;
   return RC_OK;
 }
+
+
+Value *
+stringToValue(char *val)
+{
+  Value *result = (Value *) malloc(sizeof(Value));
+
+  switch(val[0])
+    {
+    case 'i':
+      result->dt = DT_INT;
+      result->v.intV = atoi(val + 1);
+      break;
+    case 'f':
+      result->dt = DT_FLOAT;
+      result->v.floatV = atof(val + 1);
+      break;
+    case 's':
+      result->dt = DT_STRING;
+      result->v.stringV = malloc(strlen(val));
+      strcpy(result->v.stringV, val + 1);
+      break;
+    case 'b':
+      result->dt = DT_BOOL;
+      result->v.boolV = (val[1] == 't') ? TRUE : FALSE;
+      break;
+    default:
+      result->dt = DT_INT;
+      result->v.intV = -1;
+      break;
+    }
+
+  return result;
+}
+

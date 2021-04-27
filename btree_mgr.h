@@ -45,7 +45,4 @@ extern RC splitRootNode(BTreeHandle *tree,int page);
 // debug and test functions
 extern char *printTree (BTreeHandle *tree);
 
-// Additional Test Helper
-extern Value *stringToValue (char *val);
-
 #endif // BTREE_MGR_H

@@ -71,7 +71,6 @@ Value *stringToValue(char *val)
  * @return RC
 */
 RC initIndexManager (void *data) {
-    // Create a pointer to the memory that will contain up to 50 nodes
     bPlusTreeRecords = (record **) malloc (sizeof(record *) * B_TREE_NODE_SIZE);
     return RC_OK;
 }
@@ -182,7 +181,7 @@ RC deleteBtree (char *idxId) {
  * @return RC
 */
 RC getNumNodes (BTreeHandle *tree, int *result) {
-    // Return result = total number of nodes - repeated nodes
+    // total number of nodes - repeated nodes
     *result = totalNodeCount - 2;
 
     return RC_OK;
